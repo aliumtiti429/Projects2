@@ -1,0 +1,89 @@
+
+.Hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: url('../images/3.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-color: #333; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+    overflow: hidden;
+    user-select: none; 
+}
+
+
+.Hero h2 {
+    color: #fff;
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.Hero h4 {
+    color: #ddd;
+    font-size: 18px;
+    margin-top: 8px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.Hero .image {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 70%;
+}
+
+.Hero .image img {
+    max-height: 100%;
+    object-fit: contain;
+    pointer-events: none; 
+    
+}
+
+.Hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.567);
+    z-index: 2;
+}
+.directional .centerimgt img{
+    border-radius: 10%;
+    height:600px;
+}
+.directional{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px; 
+    box-sizing: border-box;
+    z-index: 10;
+
+}
+
+i {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
